@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Tính Cách OCEAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🔮 KHÁM PHÁ VŨ TRỤ TÍNH CÁCH 🔮</h2>
+
+        <div id="setup-section">
+            <p>Vui lòng chọn vũ trụ nhân vật bạn muốn so sánh:</p>
+            <select id="universeSelect">
+                <option value="BabyAnimals">👶 Vũ trụ Động vật Baby</option>
+                <option value="Brooklyn99">🚓 Vũ trụ Brooklyn 99</option>
+                <option value="Disney">🏰 Vũ trụ Disney</option>
+                <option value="Hogwarts">🧙‍♂️ Vũ trụ Hogwarts (Harry Potter)</option>
+                <option value="MyersBriggs">🧠 Vũ trụ Myers-Briggs</option>
+                <option value="SesameStreet">🧸 Vũ trụ Sesame Street</option>
+                <option value="StarWars">⚔️ Vũ trụ Star Wars</option>
+                <option value="Vegetables">🥦 Vũ trụ Các loại Rau Củ</option>
+            </select>
+            <button class="btn" style="width: 100%; background-color: #a6e3a1;" onclick="batDau()">BẮT ĐẦU TEST</button>
+        </div>
+
+        <div id="quiz-section" style="display: none;">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="question-box" id="questionText">Đang tải câu hỏi...</div>
+            <div class="btn-group">
+                <button class="btn" onclick="chonDiem(5)">5 - Rất đồng ý</button>
+                <button class="btn" onclick="chonDiem(4)">4 - Đồng ý</button>
+                <button class="btn" onclick="chonDiem(3)">3 - Trung lập</button>
+                <button class="btn" onclick="chonDiem(2)">2 - Không đồng ý</button>
+                <button class="btn" onclick="chonDiem(1)">1 - Rất không đồng ý</button>
+            </div>
+        </div>
+
+        <div class="result-box" id="result-section">
+            <h3 style="text-align: center; color: #f9e2af;">Kết Quả Của Bạn</h3>
+            <p id="scoreOutput"></p>
+            <hr style="border-color: #585b70;">
+            <p id="matchOutput" style="font-size: 18px; text-align: center;"></p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img id="characterImage" src="" alt="Character Image" style="display: none;">
+            </div>
+
+            <p style="text-align: center; font-style: italic; color: #f38ba8;">Tạm biệt cô Bối xinh đẹp! :love :love</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
